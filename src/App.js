@@ -3,6 +3,7 @@ import './App.css';
 import UserCard from './UserCard';
 import Swiper from './Swiper';
 import Footer from './Footer';
+import Copyright from './Copyright';
 var users=[
   {"name": "kursat",
   "img": logo,
@@ -54,6 +55,7 @@ function App() {
       <div >
         <Swiper users = {users}/>
         <Footer social = {social} />
+        <Copyright />
       </div>
       
     </div>

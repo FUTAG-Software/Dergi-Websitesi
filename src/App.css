@@ -98,3 +98,26 @@
 .footer .fa-stack:hover .fa-stack-2x {
     color: #252c38;
 }
+
+/*     Copyright     */
+
+.copyright {
+	padding-top: 1.5rem;
+	background-color: #c5eaf9;
+	text-align: center;
+}
+
+.copyright a {
+	text-decoration: none;
+}
+
+.menu ul{
+  display: inline-flex;
+}
+.menu-item{
+  padding: 5px 10px;
+}
+.row{
+  margin-right: 0;
+  margin-left: 0;
+}
