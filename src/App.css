@@ -9,13 +9,13 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 5s linear;
   }
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,66 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.user-card{
+  border: 5px blueviolet;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user-img{
+  height: 100px;
+  width: 100px;
+}
+
+/* Footer */
+.footer {
+	padding-top: 6rem;
+	padding-bottom: 3rem;
+	background: linear-gradient(rgba(255, 255, 255, 1), rgba(197, 234, 249, 1));
+	text-align: center;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.footer h4 {
+	margin-bottom: 1.875rem;
+}
+
+.footer .fa-stack {
+	width: 2em;
+	margin-bottom: 1.25rem;
+	margin-right: 0.375rem;
+	font-size: 1.5rem;
+}
+
+.footer .fa-stack .fa-stack-1x {
+    color: #252c38;
+	transition: all 0.2s ease;
+}
+
+.footer .fa-stack .fa-stack-2x {
+	color: #ffffff;
+	transition: all 0.2s ease;
+}
+
+.footer .fa-stack:hover .fa-stack-1x {
+	color: #ffffff;
+}
+
+.footer .fa-stack:hover .fa-stack-2x {
+    color: #252c38;
 }
