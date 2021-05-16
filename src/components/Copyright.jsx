@@ -23,7 +23,7 @@ export default (props) => {
                     <Menu items={cpMenu}></Menu>
                 </div>
                 <div className="col-lg-6">
-                    <p className="p-small statement">Copyright © <a href="#your-link">Your name</a></p>
+                    <span >Copyright © <a href="#your-link">Your name</a></span>
                 </div>
             </div>
     )

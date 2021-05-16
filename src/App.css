@@ -6,16 +6,16 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+/* 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 5s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
-  height: 20vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +62,7 @@
 .footer {
 	padding-top: 6rem;
 	padding-bottom: 3rem;
-	background: linear-gradient(rgba(255, 255, 255, 1), rgba(197, 234, 249, 1));
+	background: linear-gradient(#ffffff, #22afe9);
 	text-align: center;
 }
 
@@ -103,12 +103,16 @@
 
 .copyright {
 	padding-top: 1.5rem;
-	background-color: #c5eaf9;
+	background-color: #000;
 	text-align: center;
 }
 
 .copyright a {
 	text-decoration: none;
+  color: #ffffff;
+}
+.copyright .nav-link, .copyright span{
+  color: #ffffff;
 }
 
 .menu ul{
@@ -121,3 +125,27 @@
   margin-right: 0;
   margin-left: 0;
 }
+
+.intro{
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+  height: 500px;
+  width: 100%;
+  background: rgb(0,0,5);
+  background: linear-gradient(60deg, rgba(0,0,5,1) 13%, rgba(34,175,233,1) 47%);
+  }
+  .intro-right{
+    position: relative;
+  }
+  .intro-img{
+  }
+
+  .read-button{
+    position: absolute;
+    top: 200px;
+    right: 200px;
+  }

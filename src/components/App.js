@@ -1,11 +1,15 @@
-import logo from './logo.png';
-import './App.css';
-import UserCard from './UserCard';
+import logo from '../img/guy.png';
+import '../App.css';
 import Swiper from './Swiper';
 import Footer from './Footer';
 import Copyright from './Copyright';
+import Navbar from './Navbar';
+import Intro from './Intro';
+import Sponsors from './Sponsors';
+
+import 'bootstrap/dist/css/bootstrap.css';
 var users=[
-  {"name": "kursat",
+  {"name": "sdafasdf",
   "img": logo,
   "specs": "ise yaramaz"
   },
@@ -49,11 +53,15 @@ var social = [
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <div >
-        <Swiper users = {users}/>
+      <Navbar />
+      <div className='container-fluid'>
+        <Intro />
+        <div>
+          <h2>Ekibimiz</h2>
+          <Swiper users = {users}/>
+          <h2>Sponsorlar</h2>
+          <Sponsors users = {users}/>
+        </div>
         <Footer social = {social} />
         <Copyright />
       </div>
