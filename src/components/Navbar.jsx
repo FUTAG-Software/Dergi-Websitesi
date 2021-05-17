@@ -30,7 +30,8 @@ export default(props) =>{
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link href="#home">Ana Sayfa</Nav.Link>
-            <Nav.Link href="#features">Dergiler</Nav.Link>
+            <Nav.Link href="#features">Sayılar</Nav.Link>
+            <Nav.Link href="#pricing">Sponsorlar</Nav.Link>
             <Nav.Link href="#pricing">Hakkımızda</Nav.Link>
             <Nav.Link href="#pricing">İletişim</Nav.Link>
           </Nav>

@@ -40,7 +40,7 @@
 .footer {
 	padding-top: 6rem;
 	padding-bottom: 3rem;
-	background: linear-gradient(#ffffff, #febf18);
+	background: linear-gradient(#ffffff, #dfb034);
 	text-align: center;
 }
 
@@ -81,7 +81,7 @@
 
 .copyright {
 	padding-top: 1.5rem;
-	background-color: #febf18;
+	background-color: #dfb034;
 	text-align: center;
 }
 
@@ -104,8 +104,6 @@
   margin-left: 0;
 }
 
-.intro-container{
-}
 .intro{
   padding: 20px 20px 20px;
   color: #ffffff;
@@ -126,8 +124,6 @@
 }
 .intro-left{
   padding: 20px;
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(8px);
   text-align: left;
   font-size: 2rem;
   display: flex;
@@ -136,6 +132,7 @@
   flex: 1;
   margin-right: 60px;
   animation: fadeInLeft 1s;
+  background-color: rgba(31, 29, 29, 0.507);
 }
 .big-header{
   font-weight: bold;

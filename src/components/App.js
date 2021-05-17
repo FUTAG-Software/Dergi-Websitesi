@@ -64,10 +64,7 @@ function App() {
     <div className="App">
       <Navbar />
         <Intro />
-        <div>
-          <h2>Sponsorlar</h2>
-          <Sponsors users = {users} key={users.key}/>
-        </div>
+        <Sponsors users = {users} key={users.key}/>
         <Footer social = {social} key={users.key}/>
         <Copyright />
     </div>
