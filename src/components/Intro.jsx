@@ -9,8 +9,8 @@ export default(props) =>{
                 <p className='italic'>Hemen okuyun!</p>
             </div>
             <div className='intro-right'>
-                <img className='intro-img' src={logo} width="500px" height="600px"></img>
-                <Button className='read-button' variant="light" size="lg" width="100">Hemen Oku!</Button>{' '}
+                <img className='intro-img' src={logo} height="600px"></img>
+                <Button className='read-button' variant="light">Hemen Oku!</Button>{' '}
             </div>
         </div>
     )

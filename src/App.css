@@ -143,15 +143,17 @@
   font-style: italic;
 }
 .intro-img{
+  width: 450px;
+  height: 500px;
 }
 
 .read-button{
   position: relative;
   align-content: center;
-  height: 100px;
+  height: 80px;
   width: 400px;
   bottom: 250px;
-  left: 50px;
+  left: 25px;
   animation: flash 5s infinite;
 }
 
@@ -208,4 +210,14 @@ to {
 .animate__fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
+}
+
+@media (max-width: 450px) {
+  .intro-img{
+    width: 70vw;
+  }
+  .read-button{
+    width: 60vw;
+    left: calc(60vw - 37);
+  }
 }
