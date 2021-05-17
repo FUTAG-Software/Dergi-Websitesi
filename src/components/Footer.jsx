@@ -2,7 +2,7 @@ import React from 'react';
 
 export default (props) => {
     return(
-        <div className="footer row">
+        <div className="footer">
             <div className="col-lg-12">
                 <h4>This is an example text.</h4>
                 <div className="social-container">

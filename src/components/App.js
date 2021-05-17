@@ -9,23 +9,28 @@ import Sponsors from './Sponsors';
 
 import 'bootstrap/dist/css/bootstrap.css';
 var users=[
-  {"name": "sdafasdf",
+  {"key": 1,
+    "name": "sdafasdf",
   "img": logo,
   "specs": "ise yaramaz"
   },
-  {"name": "werwrer",
+  {"key": 2,
+    "name": "werwrer",
   "img": logo,
   "specs": "iasdfsadfsdf"
   },
-  {"name": "gdfgdfg",
+  {"key": 3,
+    "name": "gdfgdfg",
   "img": logo,
   "specs": "iwerwrewer"
   },
-  {"name": "gdfgdfg",
+  {"key": 4,
+    "name": "gdfgdfg",
   "img": logo,
   "specs": "iwerwrewer"
   },
-  {"name": "gdfgdfg",
+  {"key": 5,
+    "name": "gdfgdfg",
   "img": logo,
   "specs": "iwerwrewer"
   }
@@ -33,18 +38,22 @@ var users=[
 
 var social = [
   {
+    "key": 1,
     "link": "sadfasdf.com",
     "icon": "fa-facebook-f"
   },
   {
+    "key": 2,
     "link": "213123.com",
     "icon": "fa-instagram"
   },
   {
+    "key": 3,
     "link": "qdscc.com",
     "icon": "fa-youtube"
   },
   {
+    "key": 4,
     "link": "qwqeqwe.com",
     "icon": "fa-pinterest"
   }
@@ -54,18 +63,13 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className='container-fluid'>
         <Intro />
         <div>
-          <h2>Ekibimiz</h2>
-          <Swiper users = {users}/>
           <h2>Sponsorlar</h2>
-          <Sponsors users = {users}/>
+          <Sponsors users = {users} key={users.key}/>
         </div>
-        <Footer social = {social} />
+        <Footer social = {social} key={users.key}/>
         <Copyright />
-      </div>
-      
     </div>
   );
 }
