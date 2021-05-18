@@ -1,20 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@300;400;500&display=swap');
+
 .App {
   text-align: center;
-  background: url(./img/yellow.jpg);
+  background: url(./img/26292.jpg);
   background-size: cover;
+  background-position: center bottom;
+  font-family: 'Raleway', sans-serif;
 }
 
 .navbar-logo{
   display: inline;
 }
-.navbar span{
-  opacity: 0.8;
-}
-.navbar span, .navbar a{
-  font-size: 2rem;
-  font-weight: bold;
+
+.navbar a span{
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  vertical-align: middle;
 }
 
+.intro{
+  padding: 20px 20px 20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;    
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.backdrop{
+  backdrop-filter: contrast(80%) blur(3px);
+}
+.intro-right{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  animation: backInRight 2s;
+}
+.intro-left{
+  padding: 20px 60px;
+  text-align: left;
+  font-size: 1.5rem;
+  animation: fadeInLeft 1s;
+  background-color: rgba(31, 29, 29, 0.685);
+}
+.big-header{
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  flex-wrap: wrap;
+}
+.subscribe-btn{
+  align-content: center;
+  background-color: rgb(109, 3, 18) !important;
+  width: 50%;
+}
+.italic{
+  font-style: italic;
+}
+.intro-img{
+  width: 450px;
+  height: 500px;
+}
+
+.read-button{
+  position: relative;
+  align-content: center;
+  height: 80px;
+  width: 400px;
+  bottom: 250px;
+  left: 25px;
+  animation: flash 5s infinite;
+}
 .cards{
   display: flex;
   justify-content: center;
@@ -104,58 +162,7 @@
   margin-left: 0;
 }
 
-.intro{
-  padding: 20px 20px 20px;
-  color: #ffffff;
-  display: flex;
-  align-items: center;    
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
-.backdrop{
-  backdrop-filter: contrast(75%);
-}
-.intro-right{
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  animation: backInRight 2s;
-}
-.intro-left{
-  padding: 20px;
-  text-align: left;
-  font-size: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  flex: 1;
-  margin-right: 60px;
-  animation: fadeInLeft 1s;
-  background-color: rgba(31, 29, 29, 0.507);
-}
-.big-header{
-  font-weight: bold;
-  font-size: 3rem;
-  flex-wrap: wrap;
-}
-.italic{
-  font-style: italic;
-}
-.intro-img{
-  width: 450px;
-  height: 500px;
-}
 
-.read-button{
-  position: relative;
-  align-content: center;
-  height: 80px;
-  width: 400px;
-  bottom: 250px;
-  left: 25px;
-  animation: flash 5s infinite;
-}
 
 @keyframes flash {
 from,
@@ -211,6 +218,7 @@ to {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
+
 
 @media (max-width: 450px) {
   .intro-img{

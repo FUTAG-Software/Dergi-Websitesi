@@ -23,8 +23,8 @@ export default(props) =>{
     return(
       <Navbar className='' bg="dark" variant="dark" expand="lg">
         <Navbar.Brand className='mx-auto' href="#home">
-          <img className='navbar-logo' src={logo} width='100' alt='logo'></img>
-          <span>Futag Dergi</span>
+          <img className='navbar-logo' src={logo} width='70' alt='logo'></img>
+          <span>Fütag Dergi</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

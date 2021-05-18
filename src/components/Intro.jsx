@@ -6,7 +6,8 @@ export default(props) =>{
         <div className='intro backdrop'>
             <div className='intro-left'>
                 <p className="big-header">FÜTAG Hasbi dergisinin ilk sayısı çıktı!</p>
-                <p className='italic'>Hemen okuyun!</p>
+                <p className='italic'>Email listemize kaydol ilk senin haberin olsun!</p>
+                <Button className='subscribe-btn'>Kaydol</Button>{' '}
             </div>
             <div className='intro-right'>
                 <img className='intro-img' src={logo} height="600px"></img>
