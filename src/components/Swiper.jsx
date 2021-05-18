@@ -7,7 +7,6 @@ SwiperCore.use([Navigation, Autoplay ]);
 export default (props) => {
   return (
     <Swiper
-      onSlideChange={() => console.log('slide change')}
       autoplay= {{
             delay: 4000,
             disableOnInteraction: false
@@ -15,21 +14,21 @@ export default (props) => {
       breakpoints={{
             // when window width is >= 640px
             300: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             },
             // when window width is >= 768px
             500: {
-            slidesPerView: 2,
-            },
-            700: {
             slidesPerView: 3,
             },
+            700: {
+            slidesPerView: 4,
+            },
             900: {
-            slidesPerView: 4,   
+            slidesPerView: 5,   
             }
         }}
-      onSwiper={(swiper) => console.log(swiper)} navigation loop>
-      {props.users.map( (post) => <SwiperSlide><UserCard name= {post.name} img= {post.img} specs= {post.specs} /></SwiperSlide>)}
+      navigation loop>
+      {props.users.map( (post) => <SwiperSlide><UserCard key={post.key} name= {post.name} img= {post.img} specs= {post.specs} /></SwiperSlide>)}
     </Swiper>
   );
 };
