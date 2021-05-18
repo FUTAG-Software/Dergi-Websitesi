@@ -2,12 +2,14 @@
 
 .App {
   text-align: center;
-  background: url(./img/26292.jpg);
+  background: url(./img/blackyellowmin.jpg);
   background-size: cover;
-  background-position: center bottom;
   font-family: 'Raleway', sans-serif;
 }
-
+.navbar{
+  background-color: rgba(31, 29, 29, 0.85) !important;
+  box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 0.8);
+}
 .navbar-logo{
   display: inline;
 }
@@ -19,9 +21,30 @@
   letter-spacing: 0.2rem;
   vertical-align: middle;
 }
+.nav-link{
+  color: white !important;
+  position: relative;
+}
+.nav-link:after{
+  background-color: transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.7s ease 0s, left 0.7s ease 0s;
+  width: 0;
+}
+
+.nav-link:hover:after{
+  background-color: white;
+  width: 100%;
+  left: 0;
+}
 
 .intro{
-  padding: 20px 20px 20px;
+  padding: 0 20px 0;
   color: #ffffff;
   display: flex;
   align-items: center;    
@@ -29,21 +52,24 @@
   flex-wrap: wrap;
   align-content: space-between;
 }
+/*hue-rotate(204deg)*/
 .backdrop{
-  backdrop-filter: contrast(80%) blur(3px);
+  backdrop-filter: blur(15px) contrast(70%);
 }
 .intro-right{
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 40px;
   animation: backInRight 2s;
 }
 .intro-left{
-  padding: 20px 60px;
+  padding: 30px;
+  margin-top: 30px;
   text-align: left;
   font-size: 1.5rem;
   animation: fadeInLeft 1s;
-  background-color: rgba(31, 29, 29, 0.685);
+  background-color: rgba(31, 29, 29, 0.85);
+  border-radius: 60px;
 }
 .big-header{
   font-weight: bold;
@@ -53,7 +79,7 @@
 }
 .subscribe-btn{
   align-content: center;
-  background-color: rgb(109, 3, 18) !important;
+  background-color: rgb(216, 179, 12) !important;
   width: 50%;
 }
 .italic{
@@ -62,6 +88,7 @@
 .intro-img{
   width: 450px;
   height: 500px;
+  border-radius: 60px;
 }
 
 .read-button{
@@ -71,7 +98,12 @@
   width: 400px;
   bottom: 250px;
   left: 25px;
-  animation: flash 5s infinite;
+  animation: flash 10s infinite;
+}
+
+/* Sponsors */
+.sponsors{
+  background-color: white;
 }
 .cards{
   display: flex;
@@ -128,7 +160,7 @@
 }
 
 .footer .fa-stack:hover .fa-stack-1x {
-	color: #ffffff;
+	color: #dfb034;
 }
 
 .footer .fa-stack:hover .fa-stack-2x {
@@ -139,8 +171,13 @@
 
 .copyright {
 	padding-top: 1.5rem;
-	background-color: #dfb034;
+	background-color: black;
 	text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .copyright a {
@@ -173,7 +210,7 @@ to {
 
 25%,
 75% {
-  opacity: 0;
+  opacity: 0.7;
 }
 }
 

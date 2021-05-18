@@ -6,7 +6,7 @@ import 'swiper/swiper-bundle.min.css';
 SwiperCore.use([Autoplay]);
 export default(props) =>{
     return(
-    <div className='backdrop'>
+    <div className='backdrop sponsors'>
       <h2>Sponsorlar</h2>
       <Swiper
         onSlideChange={() => console.log('slide change')}

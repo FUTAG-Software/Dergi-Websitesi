@@ -22,11 +22,11 @@ var cpMenu = [
 export default (props) => {
     return (
             <div className='copyright'>
-                <div className="col-lg-6">
+                <div className="">
                     <Menu items={cpMenu} key={cpMenu.key}></Menu>
                 </div>
-                <div className="col-lg-6">
-                    <span >Copyright © <a href="#your-link">Your name</a></span>
+                <div className="">
+                    <span >Copyright © <a href="ilker.tech">ilker.tech</a></span>
                 </div>
             </div>
     )

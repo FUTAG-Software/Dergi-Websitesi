@@ -4,7 +4,7 @@ export default (props) => {
     return(
         <div className="footer">
             <div className="col-lg-12">
-                <h4>This is an example text.</h4>
+                <h4>Bizi sosyal medyada takip edin!</h4>
                 <div className="social-container">
                     {props.social.map( (item) => <span className="fa-stack">
                     <a href={item.link}>
