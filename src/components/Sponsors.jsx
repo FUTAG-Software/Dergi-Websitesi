@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {Autoplay} from 'swiper';
 import UserCard from './UserCard';
-import 'swiper/swiper-bundle.min.css';
 
 SwiperCore.use([Autoplay]);
 export default(props) =>{

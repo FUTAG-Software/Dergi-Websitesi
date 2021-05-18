@@ -1,7 +1,6 @@
-import React from 'react';
-import logo from '../img/firstPage-1.webp'
+import logo from '../img/hasbi.webp'
 import Button from 'react-bootstrap/Button';
-import { Form } from 'react-bootstrap';
+import Form  from 'react-bootstrap/Form';
 export default(props) =>{
     return(
         <div className='intro backdrop'>

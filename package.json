@@ -6,16 +6,11 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "bootstrap": "^5.0.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.2",
-    "react-pageflip": "^2.0.3",
-    "react-pdf": "^5.3.0",
     "react-scripts": "4.0.3",
-    "sass": "^1.32.13",
-    "swiper": "^6.6.1",
-    "web-vitals": "^1.1.2"
+    "swiper": "^6.6.1"
   },
   "scripts": {
     "start": "set PORT=3099 && react-scripts start",
