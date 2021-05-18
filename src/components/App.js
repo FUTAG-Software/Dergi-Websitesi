@@ -1,4 +1,4 @@
-import logo from '../img/guy.png';
+import logo from '../img/guy.webp';
 import '../App.css';
 import Swiper from './Swiper';
 import Footer from './Footer';
@@ -7,7 +7,6 @@ import Navbar from './Navbar';
 import Intro from './Intro';
 import Sponsors from './Sponsors';
 
-import 'bootstrap/dist/css/bootstrap.css';
 var users=[
   {"key": 1,
     "name": "sdafasdf",
