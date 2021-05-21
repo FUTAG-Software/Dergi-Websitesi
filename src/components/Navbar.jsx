@@ -1,5 +1,6 @@
 import {Navbar, Nav} from 'react-bootstrap';
 import logo from '../img/futagBeyaz.webp'
+import {Link} from 'react-router-dom';
 var cpMenu = [
     {
         "key": 1,
@@ -28,11 +29,11 @@ export default(props) =>{
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#home">Ana Sayfa</Nav.Link>
-            <Nav.Link href="#features">Sayılar</Nav.Link>
-            <Nav.Link href="#pricing">Sponsorlar</Nav.Link>
-            <Nav.Link href="#pricing">Hakkımızda</Nav.Link>
-            <Nav.Link href="#pricing">İletişim</Nav.Link>
+            <Link className='nav-link' to="/">Ana Sayfa</Link>
+            <Nav.Link className='nav-link' href="/#posts">Sayılar</Nav.Link>
+            <Nav.Link className='nav-link' href="/#spns">Sponsorlar</Nav.Link>
+            <Link className='nav-link' to="/hakkimizda">Hakkımızda</Link>
+            <Nav.Link className='nav-link' href="#contact">İletişim</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

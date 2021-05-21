@@ -2,9 +2,23 @@
 
 .App {
   text-align: center;
-  background: url(./img/blackyellowmin.webp);
-  background-size: cover;
   font-family: 'Raleway', sans-serif;
+}
+a{
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+}
+
+h2{
+  letter-spacing: 0.2rem;
+}
+.link-black{
+  color: #252c38 !important;
+}
+.background{
+  background: url(./img/blackyellowmin.webp);
 }
 .navbar{
   background-color: rgba(31, 29, 29, 0.85) !important;
@@ -67,7 +81,7 @@
   margin-top: 30px;
   text-align: left;
   font-size: 1.5rem;
-  animation: fadeInLeft 1s;
+  animation: backInLeft 1s;
   background-color: rgba(31, 29, 29, 0.85);
   border-radius: 60px;
 }
@@ -77,11 +91,18 @@
   font-size: 2rem;
   flex-wrap: wrap;
 }
-.subscribe-btn{
+
+.btn-primary {
   align-content: center;
-  background-color: rgb(216, 179, 12) !important;
   width: 50%;
+  color: #fff;
+  background-color:rgb(216, 179, 12);
+  border-color: black;
 }
+.btn-primary:hover {
+  border-color: white;
+}
+
 .italic{
   font-style: italic;
 }
@@ -100,11 +121,25 @@
   left: 25px;
   animation: flash 10s infinite;
 }
+.title{
+  margin-block-start: 20px;
+}
+hr{
+  background-color: #dfb034;
+  height: 3px;
+  margin-block-start: 0;
+  margin-bottom: 2rem;
+  width: 30%;
+  border: 0;
+}
+
 
 /* Sponsors */
 .sponsors{
   background-color: white;
 }
+
+
 .cards{
   display: flex;
   justify-content: center;
@@ -132,6 +167,18 @@
 	padding-bottom: 3rem;
 	background: linear-gradient(#ffffff, #dfb034);
 	text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;    
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+#contact{
+  width: 400px;
+}
+.form-control{
+  margin-bottom: 20px;
 }
 
 .footer a {
@@ -170,21 +217,15 @@
 /*     Copyright     */
 
 .copyright {
-	padding-top: 1.5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 	background-color: black;
+  color: white;
 	text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: baseline;
-  flex-wrap: wrap;
 }
 
 .copyright a {
 	text-decoration: none;
-  color: #ffffff;
-}
-.copyright .nav-link, .copyright span{
   color: #ffffff;
 }
 
@@ -238,6 +279,30 @@ to {
   animation-name: backInRight;
 }
 
+@keyframes backInLeft {
+  0% {
+    -webkit-transform: translateX(-2000px) scale(0.7);
+    transform: translateX(-2000px) scale(0.7);
+    opacity: 0.7;
+  }
+
+  80% {
+    -webkit-transform: translateX(0px) scale(0.7);
+    transform: translateX(0px) scale(0.7);
+    opacity: 0.7;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.animate__backInLeft {
+  -webkit-animation-name: backInLeft;
+  animation-name: backInLeft;
+}
+
 @keyframes fadeInLeft {
   from {
     opacity: 0;
@@ -265,4 +330,36 @@ to {
     width: 60vw;
     left: calc(60vw - 37);
   }
+}
+
+#posts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.post-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;    
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-between;
+  position: relative;
+}
+.post-item{
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.post-desc {
+  background-color: black;
+  padding: 10px 10px;
+  overflow: hidden;
+}
+
+.about{
+  margin-top: 80px;
 }

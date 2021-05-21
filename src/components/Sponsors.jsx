@@ -1,36 +1,44 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {Autoplay} from 'swiper';
-import UserCard from './UserCard';
+import Swiper from './Swiper';
 
-SwiperCore.use([Autoplay]);
-export default(props) =>{
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('../img/sponsors/', false, /\.webp$/));
+const sponsors=[
+  {"key": 1,
+    "name": "sdafasdf",
+    "img": images['guy.webp'].default
+  },
+  {"key": 2,
+    "name": "sdafasdf",
+    "img": images['guy.webp'].default
+  },
+  {"key": 3,
+    "name": "sdafasdf",
+    "img": images['guy.webp'].default
+  },
+  {"key": 4,
+    "name": "sdafasdf",
+    "img": images['guy.webp'].default
+  },
+  {"key": 5,
+    "name": "sdafasdf",
+    "img": images['guy.webp'].default
+  }
+]
+
+export default() =>{
     return(
-    <div className='backdrop sponsors'>
-      <h2>Sponsorlar</h2>
-      <Swiper
-        autoplay= {{
-              delay: 1000,
-              disableOnInteraction: false
-        }}
-        breakpoints={{
-              // when window width is >= 640px
-              300: {
-              slidesPerView: 2,
-              },
-              // when window width is >= 768px
-              500: {
-              slidesPerView: 3,
-              },
-              700: {
-              slidesPerView: 4,
-              },
-              900: {
-              slidesPerView: 5,   
-              }
-          }}
-          loop>
-        {props.users.map( (post) => <SwiperSlide><UserCard key={post.key} name= {post.name} img= {post.img} specs= {post.specs} /></SwiperSlide>)}
-      </Swiper>
+    <div id ='spns' className='sponsors'>
+      <h2 className="title">Gümüş Sponsorlar</h2>
+      <hr/>
+      <Swiper users={sponsors} key={sponsors.key} />
+      <h2 className="title">Medya Sponsorları</h2>
+      <hr/>
+      <Swiper users={sponsors} key={sponsors.key} />
     </div>
     )
 

@@ -1,14 +1,14 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {Navigation, Autoplay } from 'swiper';
+import SwiperCore, {Autoplay} from 'swiper';
 import UserCard from './UserCard';
 import 'swiper/swiper-bundle.min.css';
 
-SwiperCore.use([Navigation, Autoplay ]);
+SwiperCore.use([Autoplay ]);
 export default (props) => {
   return (
     <Swiper
       autoplay= {{
-            delay: 4000,
+            delay: 2000,
             disableOnInteraction: false
 	    }}
       breakpoints={{
@@ -20,15 +20,12 @@ export default (props) => {
             500: {
             slidesPerView: 3,
             },
-            700: {
-            slidesPerView: 4,
-            },
             900: {
             slidesPerView: 5,   
             }
         }}
-      navigation loop>
-      {props.users.map( (post) => <SwiperSlide><UserCard key={post.key} name= {post.name} img= {post.img} specs= {post.specs} /></SwiperSlide>)}
+       loop>
+      {props.users.map( (post) => <SwiperSlide><UserCard key={post.key} name= {post.name} img= {post.img} /></SwiperSlide>)}
     </Swiper>
   );
 };
