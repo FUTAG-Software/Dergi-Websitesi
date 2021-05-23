@@ -1,31 +1,26 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {Autoplay} from 'swiper';
+import SwiperCore, {Parallax ,Autoplay} from 'swiper';
 import UserCard from './UserCard';
 import 'swiper/swiper-bundle.min.css';
 
-SwiperCore.use([Autoplay ]);
+SwiperCore.use([Autoplay, Parallax]);
 export default (props) => {
   return (
     <Swiper
       autoplay= {{
-            delay: 2000,
+            delay: 700,
             disableOnInteraction: false
 	    }}
       breakpoints={{
-            // when window width is >= 640px
-            300: {
-            slidesPerView: 2,
-            },
-            // when window width is >= 768px
             500: {
-            slidesPerView: 3,
+            slidesPerView: 1,
             },
             900: {
-            slidesPerView: 5,   
+            slidesPerView: 3,   
             }
         }}
        loop>
-      {props.users.map( (post) => <SwiperSlide><UserCard key={post.key} name= {post.name} img= {post.img} /></SwiperSlide>)}
+      {props.users.map( (post) => <SwiperSlide key={post.key}><img src= {post.img} height="300" alt="alt"/></SwiperSlide>)}
     </Swiper>
   );
 };

@@ -9,24 +9,37 @@ function importAll(r) {
 const images = importAll(require.context('../img/sponsors/', false, /\.webp$/));
 const sponsors=[
   {"key": 1,
-    "name": "sdafasdf",
-    "img": images['guy.webp'].default
+    "img": images['webtekno.webp'].default
   },
   {"key": 2,
-    "name": "sdafasdf",
-    "img": images['guy.webp'].default
+    "img": images['youthall.webp'].default
   },
   {"key": 3,
-    "name": "sdafasdf",
-    "img": images['guy.webp'].default
+    "img": images['girmuh.webp'].default
   },
   {"key": 4,
-    "name": "sdafasdf",
-    "img": images['guy.webp'].default
+    "img": images['ogrtas.webp'].default
   },
   {"key": 5,
-    "name": "sdafasdf",
-    "img": images['guy.webp'].default
+    "img": images['gswib.webp'].default
+  },
+  {"key": 6,
+    "img": images['kampustenevar.webp'].default
+  },
+  {"key": 5,
+    "img": images['abt.webp'].default
+  },
+  {"key": 5,
+    "img": images['acmfirat.webp'].default
+  },
+  {"key": 5,
+    "img": images['dou.webp'].default
+  },
+  {"key": 5,
+    "img": images['fukadin.webp'].default
+  },
+  {"key": 5,
+    "img": images['fupdr.webp'].default
   }
 ]
 
@@ -35,7 +48,11 @@ export default() =>{
     <div id ='spns' className='sponsors'>
       <h2 className="title">Gümüş Sponsorlar</h2>
       <hr/>
-      <Swiper users={sponsors} key={sponsors.key} />
+      <div className='silver-spn'>
+        <img src={images['umutlokmanhekim.webp'].default} alt='sponsor' height='300'></img>
+        <img src={images['binovative.webp'].default} alt='sponsor' height='300'></img>
+        <img src={images['beykonagi.webp'].default} alt='sponsor' height='300'></img>
+      </div>
       <h2 className="title">Medya Sponsorları</h2>
       <hr/>
       <Swiper users={sponsors} key={sponsors.key} />

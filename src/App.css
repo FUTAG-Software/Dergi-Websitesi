@@ -139,6 +139,12 @@ hr{
   background-color: white;
 }
 
+.silver-spn{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .cards{
   display: flex;
@@ -361,5 +367,8 @@ to {
 }
 
 .about{
-  margin-top: 80px;
+  padding: 80px;
+}
+h4{
+  text-align: left;
 }

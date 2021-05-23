@@ -3,23 +3,18 @@ import Button from 'react-bootstrap/Button';
 var social = [
     {
       "key": 1,
-      "link": "sadfasdf.com",
-      "icon": "fa-facebook-f"
+      "link": "https://twitter.com/teknoloji_arge",
+      "icon": 'fa-twitter fab'
     },
     {
       "key": 2,
-      "link": "213123.com",
-      "icon": "fa-instagram"
+      "link": "https://www.instagram.com/teknoarge/",
+      "icon": 'fa-instagram fab'
     },
     {
       "key": 3,
-      "link": "qdscc.com",
-      "icon": "fa-youtube"
-    },
-    {
-      "key": 4,
-      "link": "qwqeqwe.com",
-      "icon": "fa-pinterest"
+      "link": "mailto: info@futag.net",
+      "icon": 'fa-inbox fas'
     }
   ]
 
@@ -33,7 +28,7 @@ export default () => {
               {social.map( (item) => <span className="fa-stack">
               <a href={item.link}>
                 <i className="fas fa-circle fa-stack-2x"></i>
-                <i className={[item.icon, "fa-stack-1x", "fab"].join(' ')}></i>
+                <i className={[item.icon, "fa-stack-1x"].join(' ')}></i>
               </a></span>)}
           </div>
           </div>
