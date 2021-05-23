@@ -367,8 +367,9 @@ to {
 }
 
 .about{
-  padding: 80px;
+  padding: 60px;
 }
-h4{
+h5{
   text-align: left;
+  line-height: 2rem;
 }
