@@ -26,19 +26,19 @@ const sponsors=[
   {"key": 6,
     "img": images['kampustenevar.webp'].default
   },
-  {"key": 5,
+  {"key": 7,
     "img": images['abt.webp'].default
   },
-  {"key": 5,
+  {"key": 8,
     "img": images['acmfirat.webp'].default
   },
-  {"key": 5,
+  {"key": 9,
     "img": images['dou.webp'].default
   },
-  {"key": 5,
+  {"key": 10,
     "img": images['fukadin.webp'].default
   },
-  {"key": 5,
+  {"key": 11,
     "img": images['fupdr.webp'].default
   }
 ]

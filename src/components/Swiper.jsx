@@ -8,7 +8,7 @@ export default (props) => {
   return (
     <Swiper
       autoplay= {{
-            delay: 700,
+            delay: 1200,
             disableOnInteraction: false
 	    }}
       breakpoints={{

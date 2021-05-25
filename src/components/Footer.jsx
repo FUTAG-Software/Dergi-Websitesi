@@ -40,10 +40,13 @@ export default () => {
                 <Form.Control type="text" placeholder="Adınız" />
                 <Form.Control type="email" placeholder="Email Adresiniz" />
                 <Form.Control as="textarea" rows={3} placeholder="Mesajınız" />
-                <Button className='subscribe-btn'>Gönder</Button>{' '}
+                <Button className='subscribe-btn' onClick={mesaj}>Gönder</Button>{' '}
               </Form.Group>
             </Form>
           </div>
         </div>
     )
+}
+const mesaj = () =>{
+  return alert("Teşekkürler! Mesajını Aldık.")
 }

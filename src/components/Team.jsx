@@ -22,40 +22,44 @@ const team = [
         "img": images['fatma.webp'].default
     },
     {
-        'key': '3',
+        'key': '4',
         "img": images['sami.webp'].default
     },
     {
-        'key': '3',
+        'key': '5',
         "img": images['sibel.webp'].default
     },
     {
-        'key': '3',
+        'key': '6',
         "img": images['yesim.webp'].default
     },
     {
-        'key': '3',
+        'key': '7',
         "img": images['zeliha.webp'].default
     },
     {
-        'key': '3',
+        'key': '8',
         "img": images['ceyda.webp'].default
     },
     {
-        'key': '3',
+        'key': '9',
         "img": images['zeynep.webp'].default
     },
     {
-        'key': '3',
+        'key': '10',
         "img": images['rumeysa.webp'].default
     },
     {
-        'key': '3',
+        'key': '11',
         "img": images['nurcan.webp'].default
     },
     {
-        'key': '3',
+        'key': '12',
         "img": images['azis.webp'].default
+    },
+    {
+        "key": '13',
+        "img": images['ahmet.webp'].default
     }
 ]
 export default() =>{

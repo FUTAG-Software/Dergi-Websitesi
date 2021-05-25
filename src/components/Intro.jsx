@@ -10,7 +10,7 @@ export default(props) =>{
                 <Form>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Control type="email" placeholder="Email Adresiniz..." />
-                        <Button className='subscribe-btn'>Listeye Kaydol</Button>{' '}
+                        <Button className='subscribe-btn' onClick={mesaj}>Listeye Kaydol</Button>{' '}
                     </Form.Group>
                 </Form>
             </div>
@@ -20,4 +20,7 @@ export default(props) =>{
             </div>
         </div>
     )
+}
+const mesaj = () =>{
+    return alert("Teşekkürler! Mesajını Aldık.")
 }

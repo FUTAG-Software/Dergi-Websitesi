@@ -1,4 +1,6 @@
-import Team from "./Team";
+//import Team from "./Team";
+import { Suspense, lazy } from 'react';
+const Team = lazy(() => import('./Team'));
 export default() => {
     return (
       <div className="about">
@@ -8,7 +10,9 @@ export default() => {
         <br/> Topluluğumuz, Fırat Üniversitesi'nde "Ar-Ge" üzerine kurulan ilk öğrenci topluluğudur.</h5>
         <h2 className='title'>Ekibimiz</h2>
         <hr/>
-        <Team />
+        <Suspense fallback={<p>Yükleniyor...</p>}>
+          <Team />
+        </Suspense>
       </div>
     );
   }

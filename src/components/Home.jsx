@@ -1,7 +1,8 @@
+import { Suspense, lazy } from 'react';
 import Intro from './Intro';
-import Sponsors from './Sponsors';
 import Posts from './Posts'
-
+//import Sponsors from './Sponsors';
+const Sponsors = lazy(() => import('./Sponsors'));
 function Home() {
   return (
     <div className="Home">
@@ -9,7 +10,10 @@ function Home() {
         <Intro />
       </div>
       <Posts />
-      <Sponsors />
+      <Suspense fallback={<p>Yükleniyor...</p>}>
+        <Sponsors />
+      </Suspense>
+      
     </div>
   );
 }
