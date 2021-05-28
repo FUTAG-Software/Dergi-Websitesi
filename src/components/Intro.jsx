@@ -16,7 +16,8 @@ export default(props) =>{
             </div>
             <div className='intro-right'>
                 <img className='intro-img' src={logo} height="600px"></img>
-                <Button className='read-button' variant="light">Hemen Oku!</Button>{' '}
+                
+                <a href="https://online.fliphtml5.com/lkymz/dflj/" target="_blank"><Button className='read-button' variant="light">Hemen Oku!</Button>{' '}</a>
             </div>
         </div>
     )

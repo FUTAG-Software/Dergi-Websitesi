@@ -24,8 +24,8 @@ function App() {
             <Route path='/hakkimizda' component={About}></Route>
           </Switch>
           <Footer />
+          <Copyright />
         </Suspense>
-        <Copyright />
       </div>
     </Router>
   );

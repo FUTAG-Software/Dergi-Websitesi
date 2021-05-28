@@ -7,7 +7,7 @@ export default () =>{
             <hr/>
             <div className='post-list'>
                 <div className='post-item'>
-                    <a className="" href=''>
+                    <a className="" href="https://online.fliphtml5.com/lkymz/dflj/" target="_blank">
                     <img src={hasbi} alt='post1' width='200'></img>
                     <div className='post-desc'>
                             <h3>Hasbi 1.Sayı</h3>

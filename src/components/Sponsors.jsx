@@ -39,7 +39,7 @@ const sponsors=[
     "img": images['fukadin.webp'].default
   },
   {"key": 11,
-    "img": images['fupdr.webp'].default
+    "img": images['onlineGonullu.webp'].default
   }
 ]
 
