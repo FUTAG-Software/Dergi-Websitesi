@@ -118,7 +118,6 @@ h2{
   height: 80px;
   width: 400px;
   bottom: 250px;
-  left: 25px;
   animation: flash 10s infinite;
 }
 .title{
