@@ -107,7 +107,7 @@ h2{
   font-style: italic;
 }
 .intro-img{
-  width: 450px;
+  width: 400px;
   height: 500px;
   border-radius: 60px;
 }
@@ -116,7 +116,7 @@ h2{
   position: relative;
   align-content: center;
   height: 80px;
-  width: 400px;
+  width: 350px;
   bottom: 250px;
   animation: flash 10s infinite;
 }
