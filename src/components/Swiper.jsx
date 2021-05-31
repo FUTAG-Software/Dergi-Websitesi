@@ -8,7 +8,7 @@ export default (props) => {
   return (
     <Swiper
       spaceBetween={50}
-      slidesPerView={4}
+      slidesPerView={1}
       autoplay= {{
             delay: 1800,
             disableOnInteraction: false
