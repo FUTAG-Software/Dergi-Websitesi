@@ -7,20 +7,34 @@ SwiperCore.use([Autoplay, Parallax]);
 export default (props) => {
   return (
     <Swiper
+      spaceBetween={50}
+      slidesPerView={4}
       autoplay= {{
-            delay: 1200,
+            delay: 1800,
             disableOnInteraction: false
 	    }}
       breakpoints={{
-            500: {
+            450: {
             slidesPerView: 1,
             },
-            900: {
+            600: {
+            slidesPerView: 2,
+            },
+            850: {
             slidesPerView: 3,   
+            },
+            1100: {
+            slidesPerView: 4,   
             }
+            
         }}
        loop>
-      {props.users.map( (post) => <SwiperSlide key={post.key}><img src= {post.img} height="300" alt="alt"/></SwiperSlide>)}
+      {props.users.map( (post) => 
+      <SwiperSlide key={post.key}>
+        <a href={post.link}>
+          <img src= {post.img} height="200" width="200" loading="lazy" alt="alt"/>
+        </a>
+      </SwiperSlide>)}
     </Swiper>
   );
 };
